@@ -26,3 +26,4 @@ PrintArray(firstArray);
 Console.WriteLine();
 Console.Write("Ответ: ");
 PrintArray(responseArray);
+
