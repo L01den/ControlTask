@@ -8,7 +8,9 @@
 }
 
 string[] firstArray = { "111", "Hi", "hello", "world", "!!", "!!!!", ":)" };
-string[] responseArray = new string[firstArray.Length];
+
+int length = 1;
+string[] responseArray = new string[length];
 int index = 0;
 
 for (int i = 0; i < firstArray.Length; i++)
@@ -17,6 +19,8 @@ for (int i = 0; i < firstArray.Length; i++)
     {
         responseArray[index] = firstArray[i];
         index ++;
+        length ++;
+        Array.Resize(ref responseArray, length);
     }
     
 }
@@ -27,3 +31,5 @@ Console.WriteLine();
 Console.Write("Ответ: ");
 PrintArray(responseArray);
 
+
+Console.WriteLine(responseArray.Length);
