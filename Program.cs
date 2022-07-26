@@ -8,7 +8,6 @@
 }
 
 string[] firstArray = { "111", "Hi", "hello", "world", "!!", "!!!!", ":)" };
-
 int length = 1;
 string[] responseArray = new string[length];
 int index = 0;
@@ -30,6 +29,3 @@ PrintArray(firstArray);
 Console.WriteLine();
 Console.Write("Ответ: ");
 PrintArray(responseArray);
-
-
-Console.WriteLine(responseArray.Length);
